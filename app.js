@@ -72,8 +72,43 @@ function addNewItem() {
 }
 
 function removeBtns() {
-    document.getElementById('list').remove();
+    document.getElementById('list-standings').remove();
 }
 
 addNameBtn.addEventListener('click', addNewItem);
 doneAddingBtn.addEventListener('click', removeBtns);
+
+function selectedCheck(event) {
+  
+  let liEl = document.querySelectorAll('.ul-item-check');
+    liEl.forEach((elem) => {
+      if(elem.classList.contains('selected')){
+        elem.classList.remove('selected');
+      }
+      
+        event.target.classList.add('selected');
+      });
+}
+
+function selectedAction(event) {
+  
+  let liEl = document.querySelectorAll('.ul-item-action');
+    liEl.forEach((elem) => {
+      if(elem.classList.contains('selected')){
+        elem.classList.remove('selected');
+      }
+      
+        event.target.classList.add('selected');
+      });
+}
+
+
+let ulElCheck = document.querySelectorAll('.ul-item-check');
+ulElCheck.forEach((el) => {
+      el.addEventListener('click', selectedCheck); 
+    });
+
+let ulElAction = document.querySelectorAll('.ul-item-action');
+ulElAction.forEach((el) => {
+      el.addEventListener('click', selectedAction); 
+    });

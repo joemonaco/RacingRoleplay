@@ -61,7 +61,7 @@ function addNewItem() {
     document.querySelector('.input').value = '';
     var li = document.createElement('li');
     var attr = document.createAttribute('draggable');
-    var ul = document.querySelector('ul');
+    var ul = document.getElementById('race-ul');
     li.className = 'draggable';
     attr.value = 'true';
     li.setAttributeNode(attr);

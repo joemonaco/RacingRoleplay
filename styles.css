@@ -66,7 +66,7 @@ body ul .draggable {
   transition: all 200ms;
   user-select: none;
   margin: 10px auto;
-  position: relative;
+  /* position: relative; */
 }
 body ul .draggable:after {
   right: 7px;
@@ -100,7 +100,7 @@ button {
   position: relative;
 }
 
-.attribute {
+.ul-item {
   will-change: transform;
   font-family: "Raleway", sans-serif;
   font-weight: 800;

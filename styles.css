@@ -1,7 +1,7 @@
 /* Code By Webdevtrick ( https://webdevtrick.com ) */
 @import url("https://fonts.googleapis.com/css?family=Raleway:300,800");
 body {
-  background-color: #53a8e6;
+  background-color: #36454f;
 }
 body h1 {
   text-align: center;
@@ -17,12 +17,12 @@ body .list {
   display: block;
 }
 body .list ::-webkit-input-placeholder {
-  color: #cecece;
+  color: #white;
 }
 body .list .input {
   outline: none;
   border: 1px solid white;
-  background-color: #53a8e6;
+  background-color: #36454f;
   color: white;
   height: 50px;
   width: 250px;
@@ -161,7 +161,7 @@ button {
   list-style-type: none;
   /* margin: 10px; */
   /* background-color: white; */
-  color: #212121;
+  color: white;
   /* width: 25px; */
   justify-content: center;
   line-height: 3.2;

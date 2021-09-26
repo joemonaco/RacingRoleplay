@@ -3,6 +3,8 @@ var addNameBtn = document.querySelector('.addNameBtn');
 var doneAddingBtn = document.querySelector('.doneAddingBtn');
 var remove = document.querySelector('.draggable');
 
+var count = 1;
+
 function dragStart(e) {
   this.style.opacity = '0.4';
   dragSrcEl = this;
@@ -66,7 +68,18 @@ function addNewItem() {
     attr.value = 'true';
     li.setAttributeNode(attr);
     li.appendChild(document.createTextNode(newItem));
-    ul.appendChild(li);
+    var div = document.createElement("div");
+    div.classList.add('standings');
+    var text = document.createTextNode(count);
+    var paragraph = document.createElement("p");
+    var text = document.createTextNode(count);
+    paragraph.appendChild(text);
+    div.appendChild(paragraph);
+    count++;
+    div.appendChild(li);
+    ul.append(div);
+
+
     addEventsDragAndDrop(li);
   }
 }

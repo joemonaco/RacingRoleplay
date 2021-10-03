@@ -1,6 +1,6 @@
 // Code By Webdevtrick ( https://webdevtrick.com )
 var addNameBtn = document.querySelector('.addNameBtn');
-var doneAddingBtn = document.querySelector('.doneAddingBtn');
+// var doneAddingBtn = document.querySelector('.doneAddingBtn');
 var remove = document.querySelector('.draggable');
 
 var count = 1;
@@ -84,12 +84,12 @@ function addNewItem() {
   }
 }
 
-function removeBtns() {
-    document.getElementById('list-standings').remove();
-}
+// function removeBtns() {
+//     document.getElementById('list-standings').remove();
+// }
 
 addNameBtn.addEventListener('click', addNewItem);
-doneAddingBtn.addEventListener('click', removeBtns);
+// doneAddingBtn.addEventListener('click', removeBtns);
 
 function selectedCheck(event) {
   

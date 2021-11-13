@@ -3,6 +3,9 @@ var addNameBtn = document.querySelector('.addNameBtn');
 // var doneAddingBtn = document.querySelector('.doneAddingBtn');
 var remove = document.querySelector('.draggable');
 
+var lapCount = document.getElementById('lap-count');
+lapCount.addEventListener('click', addLap); 
+var laps = 0;
 var count = 1;
 
 function dragStart(e) {
@@ -113,6 +116,10 @@ function selectedAction(event) {
       
         event.target.classList.add('selected');
       });
+}
+
+function addLap(event) {
+
 }
 
 
